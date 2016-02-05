@@ -26,6 +26,15 @@ describe("founders names", function() {
       var rand = founders.random();
       expect(founders.all).to.include(rand);
     });
+
+    it("should return an array of random items if passed a number", function() {
+      var rand = founders.random(3);
+      expect(rand).to.be.a('array');
+      expect(rand).to.have.length(3);
+      rand.map(function (item) {
+        expect(founders.all).to.include(item);
+      });
+    });
   });
   
 });
