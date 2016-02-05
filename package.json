@@ -1,0 +1,26 @@
+{
+  "name": "founders-names",
+  "version": "1.0.0",
+  "description": "Get random founder's names",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronjroe/founders-names.git"
+  },
+  "keywords": [
+    "random",
+    "founders"
+  ],
+  "author": "Cameron J Roe <cameronjroe@gmail.com> (http://cameronjroe.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cameronjroe/founders-names/issues"
+  },
+  "homepage": "https://github.com/cameronjroe/founders-names#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
