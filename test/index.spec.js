@@ -4,7 +4,7 @@ import founders from '../src';
 describe("founders names", function() {
   
   describe("all", function() {
-      
+    
     it("should be an array of strings", function() {
       expect(founders.all).to.satisfy(isArrayOfString);
 
@@ -35,6 +35,7 @@ describe("founders names", function() {
         expect(founders.all).to.include(item);
       });
     });
+    
   });
   
 });
