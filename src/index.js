@@ -1,5 +1,5 @@
-var uniqueRandomArray = require('unique-random-array');
-var founders = require('./founders-names.json');
+import uniqueRandomArray from 'unique-random-array';
+import founders from './founders-names.json';
 var getRandomItem = uniqueRandomArray(founders);
 
 module.exports = {

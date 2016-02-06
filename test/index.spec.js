@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var founders = require('../src');
+import {expect} from 'chai';
+import founders from '../src';
 
 describe("founders names", function() {
   
