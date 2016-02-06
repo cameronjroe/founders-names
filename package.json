@@ -13,9 +13,9 @@
     "build": "babel src/index.js -o dist/index.js",
     "postbuild": "cp src/founders-names.json dist/founders-names.json",
     "commit": "git-cz",
-    "check-coverage": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/babel-istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "test": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover _mocha -- test/*.spec.js -R spec --compilers js:babel-core/register",
+    "test": "./node_modules/.bin/babel-node ./node_modules/.bin/babel-istanbul cover _mocha -- -R spec --compilers js:babel-core/register",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
