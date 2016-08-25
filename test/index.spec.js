@@ -18,6 +18,10 @@ describe("founders names", function() {
     it("should contain `Cameron Roe`", function() {
       expect(founders.all).to.include('Cameron Roe');
     });
+    
+    it("should contain `Tai Lopez`", function() {
+      expect(founders.all).to.include('Tai Lopez');
+    });
   });
 
   describe("random", function() {
